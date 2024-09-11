@@ -1,2 +1,2 @@
-# Anime-Explorer
+# Akatsunime
 Catálogo de animes
