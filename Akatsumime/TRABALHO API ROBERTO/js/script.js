@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "grid-animes-bem-avaliados"
   );
   const gridAnimesRecentes = document.getElementById("grid-animes-recentes");
-  
+
   function buscarAnimes(url, elementoGrid) {
     fetch(url)
       .then((response) => response.json())
@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlAnimesRecentes =
     "https://kitsu.io/api/edge/anime?sort=-startDate&page[limit]=15";
 
-  // Chamadas para carregar os animes
   buscarAnimes(urlAnimesPopulares, gridAnimesPopulares);
   buscarAnimes(urlAnimesBemAvaliados, gridAnimesBemAvaliados);
   buscarAnimes(urlAnimesRecentes, gridAnimesRecentes);
