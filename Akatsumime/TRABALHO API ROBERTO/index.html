@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akatsunime</title>
+
+    <!-- ÍCONE DO SITE -->
+    <link rel="shortcut icon" type="imagex/png" href="assets/LOGO JANELA SITE/519a3702-b5ae-42d3-8908-6a2bdb86e22c.png">
+    <!-- ÍCONE DO SITE -->
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- BOOTSTRAP -->
+
+    <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+
+
+</head>
+
+<body>
+
+    <!--------------------------------- CABEÇALHO ------------------------------->
+    <header>
+        <div class="logotipo">
+            <img src="assets/akatsuki.png" alt="Anime Explorer">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#animes-populares">Populares</a></li>
+                <li><a href="#animes-bem-avaliados">Melhores Avaliados</a></li>
+                <li><a href="#animes-recentes">Recentes</a></li>
+                <li><a href="busca.html"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--------------------------------- CABEÇALHO ------------------------------->
+
+
+
+
+
+    <!----------------- INÍCIO DO CARROSEL ----------------->
+
+    <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#hero-carousel" data-slide-to="1"></li>
+                <li data-target="#hero-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!--  ------------- CARROSEL 1 ------------- -->
+                <div class="carousel-item active c-item">
+                    <img class="d-block w-100 c-img" src="assets/carrossel/demon-slayer-new.svg" alt="PRIMEIRO SLIDE">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1-car1">DEMON SLAYER</h1>
+                    </div>
+                </div>
+                <!--  ------------- CARROSEL 1 ------------- -->
+
+
+                <!--  ------------- CARROSEL 2 ------------- -->
+                <div class="carousel-item c-item">
+                    <img class="d-block w-100 c-img" src="assets/carrossel/jujutsu-kaisen.svg" alt="PRIMEIRO SLIDE">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1-car2">JUJUTSU KAISEN</h1>
+                    </div>
+                </div>
+                <!--  ------------- CARROSEL 2 ------------- -->
+
+
+                <!--  ------------- CARROSEL 3 ------------- -->
+                <div class="carousel-item c-item">
+                    <img class="d-block w-100 c-img" src="assets/carrossel/one-piece.svg" alt="PRIMEIRO SLIDE">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1-car3">ONE PIECE</h1>
+                    </div>
+                </div>
+                <!--  ------------- CARROSEL 3 ------------- -->
+            </div>
+
+
+
+            <!-- ------------- CONTROLE DE CARROSEL ------------- -->
+            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Prévia</span>
+            </a>
+            <a class="carousel-control-next" href="#hero-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+            <!-- ------------- CONTROLE DE CARROSEL ------------- -->
+
+
+
+        </div>
+        <!----------------- FIM DO CARROSEL ----------------->
+
+
+
+
+
+        <!--------------------------------- CARDS DOS ANIMES ------------------------------->
+
+        <div class="container-principal">
+
+            <!------------------ ANIMES POPULARES ------------------>
+            <section id="animes-populares">
+                <h2 class="titulo-secao">Animes Populares</h2>
+                <div class="grid-animes" id="grid-animes-populares">
+                    <!-- aqui vão aparecer os cards dos animes populares -->
+                </div>
+            </section>
+            <!------------------ ANIMES POPULARES ------------------>
+
+
+
+            <!------------------ ANIMES MAIS BEM AVALIADOS ------------------>
+            <section id="animes-bem-avaliados">
+                <h2 class="titulo-secao">Melhores Avaliados</h2>
+                <div class="grid-animes" id="grid-animes-bem-avaliados">
+                    <!-- aqui vão aparecer os cards dos animes mais bem avaliados -->
+                </div>
+            </section>
+            <!------------------ ANIMES MAIS BEM AVALIADOS ------------------>
+
+
+
+            <!------------------ ANIMES RECENTES ------------------>
+            <section id="animes-recentes">
+                <h2 class="titulo-secao">Animes Recentes</h2>
+                <div class="grid-animes" id="grid-animes-recentes">
+                    <!-- aqui vão aparecer os cards dos animes recentes -->
+                </div>
+            </section>
+            <!------------------ ANIMES RECENTES ------------------>
+        </div>
+
+
+
+        <!------------------ BOTÃO PARA SUBIR ------------------>
+
+        <span><a href="#top"><i class="fas fa-arrow-up"></i></a></span>
+
+        <!------------------ BOTÃO PARA SUBIR ------------------>
+
+
+        <script src="js/script.js"></script>
+
+        <!-- Link para o Bootstrap JS, Popper.js, e jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Link para o Bootstrap JS, Popper.js, e jQuery -->
+</body>
+
+</html>

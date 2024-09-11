@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscar Animes</title>
+    <link rel="stylesheet" href="busca.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--CABEÇALHO DA PÁGINA-->
+    <header id="top">
+      <div class="logotipo">
+        <a href="index.html"
+          ><img src="assets/akatsuki.png" alt="Página Principal"
+        /></a>
+      </div>
+    </header>
+
+    <!--BUSCAR ANIMES-->
+    <section id="buscar-animes">
+      <h2 class="titulo-secao">Buscar Animes</h2>
+      <input
+        type="text"
+        name="inputBusca"
+        id="inputBusca"
+        placeholder="Digite o nome do anime..."
+      />
+      <button id="bntBuscar">Buscar</button>
+      <div class="grid-animes" id="grid-animes-populares"></div>
+      <div class="grid-animes" id="grid-animes-bem-avaliados"></div>
+      <div class="grid-animes" id="grid-animes-recentes"></div>
+    </section>
+    <span
+      ><a href="#top"><i class="fas fa-arrow-up"></i></a
+    ></span>
+    <script src="js/busca.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  padding: 20px 40px;
+  background: #121212;
+  display: fixed;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+}
+#bntBuscar {
+  padding: 12px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 30px 30px 0; /* Arredonda o lado direito do botão */
+  font-size: 16px;
+  /*transition: background-color 0.3s ease;*/
+}
+#buscar-animes {
+  text-align: center;
+}
+#inputBusca {
+  gap: 30px;
+  padding: 10px;
+  width: 60%;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid #ff0000;
+  margin-bottom: 20px;
+}
+.titulo-secao {
+  color: #ffffff;
+  padding: 20px;
+}
+
+.logotipo img {
+  width: 151px;
+  height: 102px;
+}
+.grid-animes {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+
+/* Estilo dos cards */
+.anime-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(186, 0, 0, 0.306);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  width: 330px;
+  height: 400px;
+}
+
+.anime-card img {
+  width: 100%;
+  height: 92%; /* Ajustando a altura da imagem para ocupar % do card */
+  object-fit: cover;
+}
+
+.anime-card h1 {
+  padding: 10px 5px;
+  background: #121212;
+  color: #fff;
+  font-size: 0.9rem; /* Ajustando o tamanho da fonte do título */
+  text-transform: uppercase;
+  transition: background 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Impede que o título quebre em várias linhas */
+}
+
+/* Estilo do hover */
+.anime-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(247, 0, 0, 0.557);
+}
+
+.anime-card .anime-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anime-card:hover .anime-info {
+  opacity: 1;
+}
+
+.anime-card .anime-info p {
+  font-size: 15px; /* Ajustando o tamanho da fonte da sinopse */
+  margin-bottom: 90px;
+  line-height: 1.3;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.anime-card .anime-info .ano-anime {
+  font-size: 0.8rem;
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.anime-card .anime-info .autor-ano p {
+  margin: 5px 0;
+}
+
+Adicionando uma borda sutil .anime-card {
+  border: 1px solid #ac1a1a;
+}
+
+/* estilização do titulo*/
+h2 {
+  color: aliceblue;
+}
+span a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none; /*Remove o sublinhado */
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}

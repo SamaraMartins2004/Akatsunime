@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    padding: 5px 60px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+}
+
+.logotipo img {
+    width: 110px;
+    height: 100px;
+    /* border: 1px solid blue; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+nav ul li a:hover {
+    color: #b90000;
+    text-decoration: none;
+}
+
+nav ul li a i {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* ------------------- BARRA DE SCROLL ------------------- */
+
+/* Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ca0808;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ca0808;
+}
+
+/* navegadores baseados em Gecko (Firefox e mais outros) */
+html {
+    scrollbar-width: initial;
+    scrollbar-color: #ca0808 #000000;
+}
+
+/* ------------------- BARRA DE SCROLL ------------------- */
+
+
+
+/* --------------------- CARROSSEL DE ANIMES ------------------- */
+
+.c-item {
+    /* Tamanho das imagens: 1366 x 730 px */
+    width: 100%;
+    height: 660px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.h1-car1, .h1-car2, .h1-car3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100%;
+}
+
+/* --------------------- CARROSSEL DE ANIMES ------------------- */
+
+
+
+
+
+/* ------------------ CARDS DOS ANIMES ------------------ */
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(255, 0, 0);
+    padding-left: 45px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .container-principal {
+    /* border: 3px solid #0007d3; */
+    margin-top: 30px;
+  }
+
+.grid-animes {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.anime-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(186, 0, 0, 0.306);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 300px;
+    height: 380px;
+    margin-bottom: 40px;
+}
+
+.anime-card img {
+    width: 100%;
+    height: 86%;
+    object-fit: cover;
+}
+
+.anime-card h1 {
+    /* padding-top: 13px;
+    padding-right: 5px;
+    padding-bottom: 70px;
+    padding-left: 5px; */
+    padding: 13px;
+    /* TOP -  RIGHT - BOTTOM - LEFT */
+    background: #000;
+    color: #fff;
+    font-size: 17px;
+    /* Ajustando o tamanho da fonte do título */
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.anime-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(247, 0, 0, 0.557);
+}
+
+.anime-card .anime-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anime-card:hover .anime-info {
+    opacity: 1;
+    border: 1px solid #5a0a0a;
+}
+
+.anime-card .anime-info p {
+    font-size: 16px;
+    margin-bottom: 90px;
+    line-height: 1.3;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.anime-card .anime-info .ano-anime {
+    font-size: 0.8rem;
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+.anime-card .anime-info .autor-ano p {
+    margin: 5px 0;
+}
+
+/* ------------------- BOTÃO PARA FIXO PARA O INÍCIO ------------------- */
+
+span a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+span a:hover {
+    background-color: #cc0000;
+    color: #272727;
+    text-decoration: none;
+}
+
+    /* ------------------- BOTÃO PARA FIXO PARA O INÍCIO ------------------- */
